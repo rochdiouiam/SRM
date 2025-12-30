@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="icon" href="icone.png">
+ <title>SRM oriental</title>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+ <img src="SRM-Oriental.jpg" alt="logo" height="70"  width="200">
+ <a href="#photo">Accueil</a>
+ <a href="#missions">Objectifs et Missions</a>
+ <a href="#domaines">Domaines d’Activité</a>
+ <a href="#valeurs">Valeurs</a>
+ <a href="#reclamation">Reclamations</a>
+ <a href="#contact">Contact</a>
+ <a href="index.html">Déconnecter</a>
+</header>
+
+<!--photo-->
+<section id="photo" class="photo">
+    <div class="presentation">
+    <h2> SRM Oriental</h2>
+    <p>SRM Oriental (Société Régionale Multiservices Oriental) est une entreprise marocaine implantée dans la région de l’Oriental.
+Elle est spécialisée dans la fourniture de services et de solutions dans les domaines de l’ingénierie, de l’informatique, de l’électricité et de la maintenance industrielle.
+    </p>
+    </div>
+    <!-- Arrows -->
+    <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+    <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+
+    <!-- Dots -->
+    <div class="dots" id="dots">
+      <span class="active" onclick="goToSlide(0)"></span>
+      <span onclick="goToSlide(1)"></span>
+      <span onclick="goToSlide(2)"></span>
+    </div>
+</section>
+
+<section id="missions" class="mis">
+<h1>Objectifs et Missions</h1>
+    <div class="divider"></div>
+    <p>L’objectif principal de SRM Oriental est d’offrir des solutions globales et adaptées aux besoins de ses clients,
+        en combinant savoir-faire technique, innovation et proximité.<br> Ses missions incluent :</p>
+    <div class="missions">
+        <div class="mission">
+            <h3>1.</h3><p> La mise en place et la maintenance des infrastructures informatiques et électriques.</p>
+        </div>
+        <div class="mission">
+           <h3>2. </h3><p>Le développement de solutions personnalisées pour les entreprises et administrations.</p>
+        </div>
+        <div class="mission">
+            <h3>3. </h3><p>L’accompagnement à la transformation digitale.</p>
+        </div>
+        <div class="mission">
+            <h3>4. </h3><p>La garantie d’un service de qualité respectant les normes en vigueur.</p>
+        </div>
+    </div>
+</section>
+
+<section id="domaines" class="dmn">
+<h1>Domaines d’Activité</h1>
+    <div class="divider"></div>
+    <p>SRM Oriental propose une large gamme de services, notamment :</p>
+    <div class="domaines">
+        <div class="domaine">
+            <div>
+            <h3>Informatique et Réseaux :</h3>
+            <p>installation, maintenance, gestion de systèmes et sécurité informatique.</p>
+            </div>
+        </div>
+    <div class="domaine">
+        <div>
+            <h3>Électricité et Électronique :</h3>
+            <p> câblage, automatisation, maintenance des équipements.</p>
+        </div>
+    </div>
+   <div class="domaine">
+       <div>
+           <h3>Ingénierie et Conseil :</h3>
+           <p> études techniques, conception de solutions sur mesure.</p>
+       </div>
+   </div>
+   <div class="domaine">
+       <div>
+           <h3>Services aux entreprises :</h3>
+           <p>assistance technique, formation , support.</p>
+       </div>
+   </div>
+    </div>
+</section>
+
+<section id="valeurs" class="val">
+    <h1>Valeurs</h1>
+    <div class="divider"></div>
+    <p>SRM Oriental fonde son identité sur quatre valeurs fondamentales :</p>
+    <div class="valeurs">
+        <div class="valeur">
+            <div>
+                <h3>Innovation :</h3>
+                <p>proposer des solutions modernes et performantes.</p>
+            </div>
+        </div>
+    <div class="valeur">
+        <div>
+            <h3>Proximité : </h3>
+            <p>un acteur régional à l’écoute des clients.</p>
+        </div>
+    </div>
+    <div class="valeur">
+        <div>
+            <h3>Qualité :</h3>
+            <P>garantir des prestations fiables et conformes aux normes.</P>
+        </div>
+    </div>
+    <div class="valeur">
+        <div>
+            <h3>Développement durable :</h3>
+            <p>adopter une démarche respectueuse de l’environnement.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="reclamation" class="rec">
+ <h1>Reclamation</h1>
+    <div class="divider"></div>
+    <div class="reclamations">
+        <p>Pour toute réclamation, veuillez remplir le formulaire suivant: </p>
+    <form name="form3" class="form" >
+     <input type="text" name="nom" placeholder="Nom">
+     <input type="text" name="prénom"placeholder="Prénom:">
+     <input type="email" name="e-mail" placeholder="E-mail:">
+     <input type="text" name="problème" placeholder="Type de problème:">
+     <textarea rows="5" cols="20" placeholder="Description:"></textarea>
+     <input type="submit" value="Envoyer">
+    </form>
+    </div>
+</section>
+
+<section id="contact" class="cnt">
+  <h1>CONTACTEZ-NOUS</h1>
+    <div class="divider"></div>
+    <div class="contact">
+    <p>Nous sommes disponibles du lundi au vendredi de 8h à 16h</p>
+
+    <div class="contact-options">
+      <!-- Téléphone -->
+      <div class="contact-box">
+        <i class="fa fa-phone"></i>
+        <h3>Par téléphone</h3>
+        <p>Appelez-nous au : 05 36 74 37 43<br>(Lundi au vendredi de 8h à 16h)</p>
+      </div>
+
+      <!-- adresse -->
+      <div class="contact-box">
+        <i class="fa fa-comments"></i>
+        <h3>Par adresse</h3>
+        <p>visitez-nous dans la société :Hay Al Hikma, Bd la Liberté, BP 418 Oujda</p>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-box">
+        <i class="fa fa-envelope"></i>
+        <h3>Par email</h3>
+        <p>Contactez-nous sur :<br>contact@srm-ori.ma</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
